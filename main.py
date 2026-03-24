@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-
+import random
 app = FastAPI()
 
 
@@ -8,7 +8,7 @@ app = FastAPI()
 async def root():
     return {"Hello": "World"}
 
-
-@app.get("/funçaoteste")
+#127.0.0.1:8000/ teste
+@app.get("/teste1")
 async def funcaoteste():
-    return {"O teste": "deu certo"}
+    return {"Teste": True, "num_aleatorio": random.randint( 0 , 1000)}
