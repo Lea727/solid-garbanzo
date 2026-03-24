@@ -2,13 +2,13 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-#127.0.0.1:8000/
 
-@app.get("/")
+
+@app.get("/helloword")
 async def root():
     return {"Hello": "World"}
 
-#127.0.0.1:8000/ teste1
-@app.get("/teste")
+
+@app.get("/funçaoteste")
 async def funcaoteste():
     return {"O teste": "deu certo"}
