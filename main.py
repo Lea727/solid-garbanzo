@@ -2,9 +2,9 @@ from fastapi import FastAPI
 import random
 app = FastAPI()
 
-#127.0.0.1:8000/
 
-@app.get("/")
+
+@app.get("/helloword")
 async def root():
     return {"Hello": "World"}
 
