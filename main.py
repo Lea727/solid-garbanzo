@@ -12,3 +12,4 @@ async def root():
 @app.get("/teste1")
 async def funcaoteste():
     return {"Teste": True, "num_aleatorio": random.randint( 0 , 1000)}
+# alteração teste
